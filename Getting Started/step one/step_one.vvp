@@ -1,0 +1,33 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000267fb7e14f0 .scope module, "step_one_tb" "step_one_tb" 2 3;
+ .timescale -9 -12;
+L_00000267fb8b6300 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v00000267fb7e9330_0 .net "expected", 0 0, L_00000267fb8b6300;  1 drivers
+L_00000267fb8b62b8 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v00000267fb7e1810_0 .net "out", 0 0, L_00000267fb8b62b8;  1 drivers
+S_00000267fb7e1680 .scope module, "dut" "top_module" 2 7, 3 1 0, S_00000267fb7e14f0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "one";
+v00000267fb7e1f80_0 .net "one", 0 0, L_00000267fb8b62b8;  alias, 1 drivers
+    .scope S_00000267fb7e14f0;
+T_0 ;
+    %vpi_call 2 14 "$dumpfile", "step_one_waveform.vcd" {0 0 0};
+    %vpi_call 2 15 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000267fb7e14f0 {0 0 0};
+    %delay 50000, 0;
+    %vpi_call 2 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "step_one_tb.v";
+    "step_one.v";
