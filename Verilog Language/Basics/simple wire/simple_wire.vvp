@@ -1,0 +1,64 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000025b2f6c14b0 .scope module, "simple_wire_tb" "simple_wire_tb" 2 3;
+ .timescale -9 -12;
+L_0000025b2f6c9580 .functor BUFZ 1, v0000025b2f75bc40_0, C4<0>, C4<0>, C4<0>;
+v0000025b2f6c1870_0 .net "expected", 0 0, L_0000025b2f6c9580;  1 drivers
+v0000025b2f75bc40_0 .var "in", 0 0;
+v0000025b2f75bce0_0 .net "out", 0 0, L_0000025b2f6ca260;  1 drivers
+S_0000025b2f6c1640 .scope begin, "$ivl_for_loop0" "$ivl_for_loop0" 2 20, 2 20 0, S_0000025b2f6c14b0;
+ .timescale -9 -12;
+v0000025b2f6c1d30_0 .var/i "i", 31 0;
+S_0000025b2f6cd2b0 .scope module, "dut" "top_module" 2 8, 3 1 0, S_0000025b2f6c14b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "in";
+    .port_info 1 /OUTPUT 1 "out";
+L_0000025b2f6ca260 .functor BUFZ 1, v0000025b2f75bc40_0, C4<0>, C4<0>, C4<0>;
+v0000025b2f6c94e0_0 .net "in", 0 0, v0000025b2f75bc40_0;  1 drivers
+v0000025b2f6c17d0_0 .net "out", 0 0, L_0000025b2f6ca260;  alias, 1 drivers
+    .scope S_0000025b2f6c14b0;
+T_0 ;
+    %vpi_call 2 16 "$dumpfile", "simple_wire_waveform.vcd" {0 0 0};
+    %vpi_call 2 17 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000025b2f6c14b0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000025b2f75bc40_0, 0, 1;
+    %fork t_1, S_0000025b2f6c1640;
+    %jmp t_0;
+    .scope S_0000025b2f6c1640;
+t_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000025b2f6c1d30_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0000025b2f6c1d30_0;
+    %cmpi/s 20, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %delay 5000, 0;
+    %load/vec4 v0000025b2f75bc40_0;
+    %inv;
+    %store/vec4 v0000025b2f75bc40_0, 0, 1;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0000025b2f6c1d30_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0000025b2f6c1d30_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %end;
+    .scope S_0000025b2f6c14b0;
+t_0 %join;
+    %vpi_call 2 25 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "simple_wire_tb.v";
+    "simple_wire.v";
