@@ -1,0 +1,79 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000288c8b7c020 .scope module, "vector4_tb" "vector4_tb" 2 3;
+ .timescale -9 -12;
+v00000288c8b714b0_0 .var "_out", 31 0;
+v00000288c8b71550_0 .var "in", 7 0;
+v00000288c8b715f0_0 .net "out", 31 0, L_00000288c8c04090;  1 drivers
+S_00000288c8b7c540 .scope module, "dut" "top_module" 2 8, 3 1 0, S_00000288c8b7c020;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "in";
+    .port_info 1 /OUTPUT 32 "out";
+v00000288c8b71c80_0 .net *"_ivl_1", 0 0, L_00000288c8b71690;  1 drivers
+v00000288c8b7cf30_0 .net *"_ivl_2", 24 0, L_00000288c8b71730;  1 drivers
+v00000288c8b7c1b0_0 .net *"_ivl_5", 6 0, L_00000288c8b718b0;  1 drivers
+v00000288c8b7c6d0_0 .net "in", 7 0, v00000288c8b71550_0;  1 drivers
+v00000288c8b7c770_0 .net "out", 31 0, L_00000288c8c04090;  alias, 1 drivers
+L_00000288c8b71690 .part v00000288c8b71550_0, 7, 1;
+LS_00000288c8b71730_0_0 .concat [ 1 1 1 1], L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690;
+LS_00000288c8b71730_0_4 .concat [ 1 1 1 1], L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690;
+LS_00000288c8b71730_0_8 .concat [ 1 1 1 1], L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690;
+LS_00000288c8b71730_0_12 .concat [ 1 1 1 1], L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690;
+LS_00000288c8b71730_0_16 .concat [ 1 1 1 1], L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690;
+LS_00000288c8b71730_0_20 .concat [ 1 1 1 1], L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690, L_00000288c8b71690;
+LS_00000288c8b71730_0_24 .concat [ 1 0 0 0], L_00000288c8b71690;
+LS_00000288c8b71730_1_0 .concat [ 4 4 4 4], LS_00000288c8b71730_0_0, LS_00000288c8b71730_0_4, LS_00000288c8b71730_0_8, LS_00000288c8b71730_0_12;
+LS_00000288c8b71730_1_4 .concat [ 4 4 1 0], LS_00000288c8b71730_0_16, LS_00000288c8b71730_0_20, LS_00000288c8b71730_0_24;
+L_00000288c8b71730 .concat [ 16 9 0 0], LS_00000288c8b71730_1_0, LS_00000288c8b71730_1_4;
+L_00000288c8b718b0 .part v00000288c8b71550_0, 0, 7;
+L_00000288c8c04090 .concat [ 7 25 0 0], L_00000288c8b718b0, L_00000288c8b71730;
+    .scope S_00000288c8b7c020;
+T_0 ;
+    %vpi_call 2 14 "$dumpfile", "vector4_waveform.vcd" {0 0 0};
+    %vpi_call 2 15 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000288c8b7c020 {0 0 0};
+    %pushi/vec4 13, 0, 8;
+    %store/vec4 v00000288c8b71550_0, 0, 8;
+    %pushi/vec4 13, 0, 32;
+    %store/vec4 v00000288c8b714b0_0, 0, 32;
+    %delay 10000, 0;
+    %vpi_call 2 20 "$display", "in=%b, out=%b, expected=%b", v00000288c8b71550_0, v00000288c8b715f0_0, v00000288c8b714b0_0 {0 0 0};
+    %pushi/vec4 26, 0, 8;
+    %store/vec4 v00000288c8b71550_0, 0, 8;
+    %pushi/vec4 26, 0, 32;
+    %store/vec4 v00000288c8b714b0_0, 0, 32;
+    %delay 10000, 0;
+    %vpi_call 2 25 "$display", "in=%b, out=%b, expected=%b", v00000288c8b71550_0, v00000288c8b715f0_0, v00000288c8b714b0_0 {0 0 0};
+    %pushi/vec4 149, 0, 8;
+    %store/vec4 v00000288c8b71550_0, 0, 8;
+    %pushi/vec4 4294967189, 0, 32;
+    %store/vec4 v00000288c8b714b0_0, 0, 32;
+    %delay 10000, 0;
+    %vpi_call 2 30 "$display", "in=%b, out=%b, expected=%b", v00000288c8b71550_0, v00000288c8b715f0_0, v00000288c8b714b0_0 {0 0 0};
+    %pushi/vec4 134, 0, 8;
+    %store/vec4 v00000288c8b71550_0, 0, 8;
+    %pushi/vec4 4294967174, 0, 32;
+    %store/vec4 v00000288c8b714b0_0, 0, 32;
+    %delay 10000, 0;
+    %vpi_call 2 35 "$display", "in=%b, out=%b, expected=%b", v00000288c8b71550_0, v00000288c8b715f0_0, v00000288c8b714b0_0 {0 0 0};
+    %pushi/vec4 47, 0, 8;
+    %store/vec4 v00000288c8b71550_0, 0, 8;
+    %pushi/vec4 47, 0, 32;
+    %store/vec4 v00000288c8b714b0_0, 0, 32;
+    %delay 10000, 0;
+    %vpi_call 2 40 "$display", "in=%b, out=%b, expected=%b", v00000288c8b71550_0, v00000288c8b715f0_0, v00000288c8b714b0_0 {0 0 0};
+    %vpi_call 2 42 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "vector4_tb.v";
+    "vector4.v";
