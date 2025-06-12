@@ -1,0 +1,469 @@
+$date
+	Thu Jun 12 23:15:47 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module vector100r_tb $end
+$var wire 100 ! out [99:0] $end
+$var reg 100 " _out [99:0] $end
+$var reg 100 # in [99:0] $end
+$scope function bit_reverse $end
+$var reg 100 $ data [99:0] $end
+$var integer 32 % i [31:0] $end
+$upscope $end
+$scope module dut $end
+$var wire 100 & in [99:0] $end
+$var wire 100 ' out [99:0] $end
+$scope begin reverse[0] $end
+$var parameter 2 ( i $end
+$upscope $end
+$scope begin reverse[1] $end
+$var parameter 2 ) i $end
+$upscope $end
+$scope begin reverse[2] $end
+$var parameter 3 * i $end
+$upscope $end
+$scope begin reverse[3] $end
+$var parameter 3 + i $end
+$upscope $end
+$scope begin reverse[4] $end
+$var parameter 4 , i $end
+$upscope $end
+$scope begin reverse[5] $end
+$var parameter 4 - i $end
+$upscope $end
+$scope begin reverse[6] $end
+$var parameter 4 . i $end
+$upscope $end
+$scope begin reverse[7] $end
+$var parameter 4 / i $end
+$upscope $end
+$scope begin reverse[8] $end
+$var parameter 5 0 i $end
+$upscope $end
+$scope begin reverse[9] $end
+$var parameter 5 1 i $end
+$upscope $end
+$scope begin reverse[10] $end
+$var parameter 5 2 i $end
+$upscope $end
+$scope begin reverse[11] $end
+$var parameter 5 3 i $end
+$upscope $end
+$scope begin reverse[12] $end
+$var parameter 5 4 i $end
+$upscope $end
+$scope begin reverse[13] $end
+$var parameter 5 5 i $end
+$upscope $end
+$scope begin reverse[14] $end
+$var parameter 5 6 i $end
+$upscope $end
+$scope begin reverse[15] $end
+$var parameter 5 7 i $end
+$upscope $end
+$scope begin reverse[16] $end
+$var parameter 6 8 i $end
+$upscope $end
+$scope begin reverse[17] $end
+$var parameter 6 9 i $end
+$upscope $end
+$scope begin reverse[18] $end
+$var parameter 6 : i $end
+$upscope $end
+$scope begin reverse[19] $end
+$var parameter 6 ; i $end
+$upscope $end
+$scope begin reverse[20] $end
+$var parameter 6 < i $end
+$upscope $end
+$scope begin reverse[21] $end
+$var parameter 6 = i $end
+$upscope $end
+$scope begin reverse[22] $end
+$var parameter 6 > i $end
+$upscope $end
+$scope begin reverse[23] $end
+$var parameter 6 ? i $end
+$upscope $end
+$scope begin reverse[24] $end
+$var parameter 6 @ i $end
+$upscope $end
+$scope begin reverse[25] $end
+$var parameter 6 A i $end
+$upscope $end
+$scope begin reverse[26] $end
+$var parameter 6 B i $end
+$upscope $end
+$scope begin reverse[27] $end
+$var parameter 6 C i $end
+$upscope $end
+$scope begin reverse[28] $end
+$var parameter 6 D i $end
+$upscope $end
+$scope begin reverse[29] $end
+$var parameter 6 E i $end
+$upscope $end
+$scope begin reverse[30] $end
+$var parameter 6 F i $end
+$upscope $end
+$scope begin reverse[31] $end
+$var parameter 6 G i $end
+$upscope $end
+$scope begin reverse[32] $end
+$var parameter 7 H i $end
+$upscope $end
+$scope begin reverse[33] $end
+$var parameter 7 I i $end
+$upscope $end
+$scope begin reverse[34] $end
+$var parameter 7 J i $end
+$upscope $end
+$scope begin reverse[35] $end
+$var parameter 7 K i $end
+$upscope $end
+$scope begin reverse[36] $end
+$var parameter 7 L i $end
+$upscope $end
+$scope begin reverse[37] $end
+$var parameter 7 M i $end
+$upscope $end
+$scope begin reverse[38] $end
+$var parameter 7 N i $end
+$upscope $end
+$scope begin reverse[39] $end
+$var parameter 7 O i $end
+$upscope $end
+$scope begin reverse[40] $end
+$var parameter 7 P i $end
+$upscope $end
+$scope begin reverse[41] $end
+$var parameter 7 Q i $end
+$upscope $end
+$scope begin reverse[42] $end
+$var parameter 7 R i $end
+$upscope $end
+$scope begin reverse[43] $end
+$var parameter 7 S i $end
+$upscope $end
+$scope begin reverse[44] $end
+$var parameter 7 T i $end
+$upscope $end
+$scope begin reverse[45] $end
+$var parameter 7 U i $end
+$upscope $end
+$scope begin reverse[46] $end
+$var parameter 7 V i $end
+$upscope $end
+$scope begin reverse[47] $end
+$var parameter 7 W i $end
+$upscope $end
+$scope begin reverse[48] $end
+$var parameter 7 X i $end
+$upscope $end
+$scope begin reverse[49] $end
+$var parameter 7 Y i $end
+$upscope $end
+$scope begin reverse[50] $end
+$var parameter 7 Z i $end
+$upscope $end
+$scope begin reverse[51] $end
+$var parameter 7 [ i $end
+$upscope $end
+$scope begin reverse[52] $end
+$var parameter 7 \ i $end
+$upscope $end
+$scope begin reverse[53] $end
+$var parameter 7 ] i $end
+$upscope $end
+$scope begin reverse[54] $end
+$var parameter 7 ^ i $end
+$upscope $end
+$scope begin reverse[55] $end
+$var parameter 7 _ i $end
+$upscope $end
+$scope begin reverse[56] $end
+$var parameter 7 ` i $end
+$upscope $end
+$scope begin reverse[57] $end
+$var parameter 7 a i $end
+$upscope $end
+$scope begin reverse[58] $end
+$var parameter 7 b i $end
+$upscope $end
+$scope begin reverse[59] $end
+$var parameter 7 c i $end
+$upscope $end
+$scope begin reverse[60] $end
+$var parameter 7 d i $end
+$upscope $end
+$scope begin reverse[61] $end
+$var parameter 7 e i $end
+$upscope $end
+$scope begin reverse[62] $end
+$var parameter 7 f i $end
+$upscope $end
+$scope begin reverse[63] $end
+$var parameter 7 g i $end
+$upscope $end
+$scope begin reverse[64] $end
+$var parameter 8 h i $end
+$upscope $end
+$scope begin reverse[65] $end
+$var parameter 8 i i $end
+$upscope $end
+$scope begin reverse[66] $end
+$var parameter 8 j i $end
+$upscope $end
+$scope begin reverse[67] $end
+$var parameter 8 k i $end
+$upscope $end
+$scope begin reverse[68] $end
+$var parameter 8 l i $end
+$upscope $end
+$scope begin reverse[69] $end
+$var parameter 8 m i $end
+$upscope $end
+$scope begin reverse[70] $end
+$var parameter 8 n i $end
+$upscope $end
+$scope begin reverse[71] $end
+$var parameter 8 o i $end
+$upscope $end
+$scope begin reverse[72] $end
+$var parameter 8 p i $end
+$upscope $end
+$scope begin reverse[73] $end
+$var parameter 8 q i $end
+$upscope $end
+$scope begin reverse[74] $end
+$var parameter 8 r i $end
+$upscope $end
+$scope begin reverse[75] $end
+$var parameter 8 s i $end
+$upscope $end
+$scope begin reverse[76] $end
+$var parameter 8 t i $end
+$upscope $end
+$scope begin reverse[77] $end
+$var parameter 8 u i $end
+$upscope $end
+$scope begin reverse[78] $end
+$var parameter 8 v i $end
+$upscope $end
+$scope begin reverse[79] $end
+$var parameter 8 w i $end
+$upscope $end
+$scope begin reverse[80] $end
+$var parameter 8 x i $end
+$upscope $end
+$scope begin reverse[81] $end
+$var parameter 8 y i $end
+$upscope $end
+$scope begin reverse[82] $end
+$var parameter 8 z i $end
+$upscope $end
+$scope begin reverse[83] $end
+$var parameter 8 { i $end
+$upscope $end
+$scope begin reverse[84] $end
+$var parameter 8 | i $end
+$upscope $end
+$scope begin reverse[85] $end
+$var parameter 8 } i $end
+$upscope $end
+$scope begin reverse[86] $end
+$var parameter 8 ~ i $end
+$upscope $end
+$scope begin reverse[87] $end
+$var parameter 8 !" i $end
+$upscope $end
+$scope begin reverse[88] $end
+$var parameter 8 "" i $end
+$upscope $end
+$scope begin reverse[89] $end
+$var parameter 8 #" i $end
+$upscope $end
+$scope begin reverse[90] $end
+$var parameter 8 $" i $end
+$upscope $end
+$scope begin reverse[91] $end
+$var parameter 8 %" i $end
+$upscope $end
+$scope begin reverse[92] $end
+$var parameter 8 &" i $end
+$upscope $end
+$scope begin reverse[93] $end
+$var parameter 8 '" i $end
+$upscope $end
+$scope begin reverse[94] $end
+$var parameter 8 (" i $end
+$upscope $end
+$scope begin reverse[95] $end
+$var parameter 8 )" i $end
+$upscope $end
+$scope begin reverse[96] $end
+$var parameter 8 *" i $end
+$upscope $end
+$scope begin reverse[97] $end
+$var parameter 8 +" i $end
+$upscope $end
+$scope begin reverse[98] $end
+$var parameter 8 ," i $end
+$upscope $end
+$scope begin reverse[99] $end
+$var parameter 8 -" i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1100011 -"
+b1100010 ,"
+b1100001 +"
+b1100000 *"
+b1011111 )"
+b1011110 ("
+b1011101 '"
+b1011100 &"
+b1011011 %"
+b1011010 $"
+b1011001 #"
+b1011000 ""
+b1010111 !"
+b1010110 ~
+b1010101 }
+b1010100 |
+b1010011 {
+b1010010 z
+b1010001 y
+b1010000 x
+b1001111 w
+b1001110 v
+b1001101 u
+b1001100 t
+b1001011 s
+b1001010 r
+b1001001 q
+b1001000 p
+b1000111 o
+b1000110 n
+b1000101 m
+b1000100 l
+b1000011 k
+b1000010 j
+b1000001 i
+b1000000 h
+b111111 g
+b111110 f
+b111101 e
+b111100 d
+b111011 c
+b111010 b
+b111001 a
+b111000 `
+b110111 _
+b110110 ^
+b110101 ]
+b110100 \
+b110011 [
+b110010 Z
+b110001 Y
+b110000 X
+b101111 W
+b101110 V
+b101101 U
+b101100 T
+b101011 S
+b101010 R
+b101001 Q
+b101000 P
+b100111 O
+b100110 N
+b100101 M
+b100100 L
+b100011 K
+b100010 J
+b100001 I
+b100000 H
+b11111 G
+b11110 F
+b11101 E
+b11100 D
+b11011 C
+b11010 B
+b11001 A
+b11000 @
+b10111 ?
+b10110 >
+b10101 =
+b10100 <
+b10011 ;
+b10010 :
+b10001 9
+b10000 8
+b1111 7
+b1110 6
+b1101 5
+b1100 4
+b1011 3
+b1010 2
+b1001 1
+b1000 0
+b111 /
+b110 .
+b101 -
+b100 ,
+b11 +
+b10 *
+b1 )
+b0 (
+$end
+#0
+$dumpvars
+b1001000111100110101000101100010010000111110101011101011111110101001111110111011111011011010101111011 '
+b1101111010101101101111101110111111001010111111101011101010111110000100100011010001010110011110001001 &
+b1100100 %
+b1101111010101101101111101110111111001010111111101011101010111110000100100011010001010110011110001001 $
+b1101111010101101101111101110111111001010111111101011101010111110000100100011010001010110011110001001 #
+b1001000111100110101000101100010010000111110101011101011111110101001111110111011111011011010101111011 "
+b1001000111100110101000101100010010000111110101011101011111110101001111110111011111011011010101111011 !
+$end
+#10000
+b1110000110010101110100111011011111111111011110110011110101011001000111100110101000101100010010000000 !
+b1110000110010101110100111011011111111111011110110011110101011001000111100110101000101100010010000000 '
+b1110000110010101110100111011011111111111011110110011110101011001000111100110101000101100010010000000 "
+b1100100 %
+b100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111 $
+b100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111 #
+b100100011010001010110011110001001101010111100110111101111111111101101110010111010100110000111 &
+#20000
+b101010101010101010101010101101010101010101010101010101010101010010101010101010101010101010101010101 !
+b101010101010101010101010101101010101010101010101010101010101010010101010101010101010101010101010101 '
+b101010101010101010101010101101010101010101010101010101010101010010101010101010101010101010101010101 "
+b1100100 %
+b1010101010101010101010101010101010100101010101010101010101010101010101011010101010101010101010101010 $
+b1010101010101010101010101010101010100101010101010101010101010101010101011010101010101010101010101010 #
+b1010101010101010101010101010101010100101010101010101010101010101010101011010101010101010101010101010 &
+#30000
+b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 !
+b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 '
+b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 "
+b1100100 %
+b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 $
+b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 #
+b1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 &
+#40000
+b110111000011001010111010011101101111111111101111011001111010101100100011110011010100010110001001000 !
+b110111000011001010111010011101101111111111101111011001111010101100100011110011010100010110001001000 '
+b110111000011001010111010011101101111111111101111011001111010101100100011110011010100010110001001000 "
+b1100100 %
+b1001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110 $
+b1001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110 #
+b1001000110100010101100111100010011010101111001101111011111111111011011100101110101001100001110110 &
+#50000
