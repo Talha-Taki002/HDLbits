@@ -1,0 +1,16 @@
+module top_module (
+    input too_cold,
+    input too_hot,
+    input mode,
+    input fan_on,
+    output heater,
+    output aircon,
+    output fan
+); 
+    
+    assign fan = heater | aircon | fan_on;
+    assign heater = too_cold & mode;
+    assign aircon = ~mode & too_hot;
+
+endmodule
+
