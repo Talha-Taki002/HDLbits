@@ -1,0 +1,87 @@
+$date
+	Thu Jun 12 22:00:29 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module vectorr_tb $end
+$var wire 8 ! out [7:0] $end
+$var reg 8 " _out [7:0] $end
+$var reg 8 # in [7:0] $end
+$scope module dut $end
+$var wire 8 $ in [7:0] $end
+$var wire 8 % out [7:0] $end
+$scope begin reverse_ord[0] $end
+$var parameter 2 & i $end
+$upscope $end
+$scope begin reverse_ord[1] $end
+$var parameter 2 ' i $end
+$upscope $end
+$scope begin reverse_ord[2] $end
+$var parameter 3 ( i $end
+$upscope $end
+$scope begin reverse_ord[3] $end
+$var parameter 3 ) i $end
+$upscope $end
+$scope begin reverse_ord[4] $end
+$var parameter 4 * i $end
+$upscope $end
+$scope begin reverse_ord[5] $end
+$var parameter 4 + i $end
+$upscope $end
+$scope begin reverse_ord[6] $end
+$var parameter 4 , i $end
+$upscope $end
+$scope begin reverse_ord[7] $end
+$var parameter 4 - i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b111 -
+b110 ,
+b101 +
+b100 *
+b11 )
+b10 (
+b1 '
+b0 &
+$end
+#0
+$dumpvars
+b10110000 %
+b1101 $
+b1101 #
+b10110000 "
+b10110000 !
+$end
+#10000
+b1011000 !
+b1011000 %
+b1011000 "
+b11010 #
+b11010 $
+#20000
+b10101000 !
+b10101000 %
+b10101000 "
+b10101 #
+b10101 $
+#30000
+b1100000 !
+b1100000 %
+b1100000 "
+b110 #
+b110 $
+#40000
+b11110100 !
+b11110100 %
+b11110100 "
+b101111 #
+b101111 $
+#50000
